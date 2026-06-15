@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
-COPY ["task3.csproj", "./"]
+COPY ["Task3.csproj", "./"]
 RUN dotnet restore "task3.csproj"
 
 COPY . .
